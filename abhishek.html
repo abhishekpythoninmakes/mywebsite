@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek AR - Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* CSS styles for the website */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        nav {
+            background-color: #000;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 150px auto;
+            padding: 0 20px;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        h1 span {
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #00c4ff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff;
+            }
+            100% {
+                text-shadow: 0 0 20px #fff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff, 0 0 80px #00c4ff;
+            }
+        }
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .qualification {
+            margin-bottom: 50px;
+        }
+        .qualification-card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
+        .qualification-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-info {
+            margin-top: 50px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>
+                <span>A</span>
+                <span>b</span>
+                <span>h</span>
+                <span>i</span>
+                <span>s</span>
+                <span>h</span>
+                <span>e</span>
+                <span>k</span>
+                <span></span>
+                <span>A</span>
+                <span>R</span>
+            </h1>
+        </div>
+    </nav>
+    <div class="container">
+        <img src="your-image.jpg" alt="Abhishek AR">
+        <h1>Welcome to My Profile</h1>
+        <div class="qualification">
+            <div class="qualification-card animate__animated animate__fadeInLeft">
+                <p>Software Developer</p>
+            </div>
+            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 0.3s;">
+                <p>Data Scientist</p>
+            </div>
+            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 0.6s;">
+                <p>Machine Learning</p>
+            </div>
+            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 0.9s;">
+                <p>Artificial Intelligence</p>
+            </div>
+            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 1.2s;">
+                <p>Education: MSc</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:abhishekar3690@gmail.com">abhishekar3690@gmail.com</a></p>
+            <p>Mobile: <a href="tel:7356176925">7356176925</a></p>
+            <p>Languages: English, Malayalam, Hindi</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/your-linkedin-profile" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/your-github-profile" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </div>
+</body>
+</html>
