@@ -28,23 +28,30 @@
             padding: 0 20px;
             text-align: center;
             position: relative;
+            z-index: 1;
         }
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
             position: relative;
             z-index: 2;
+            animation: borderAnimation 2s infinite alternate;
         }
         h1 span {
             display: inline-block;
-            animation: glow 2s infinite alternate;
+            padding: 5px;
+            border: 2px solid transparent;
+            transition: border-color 0.5s;
         }
-        @keyframes glow {
+        h1 span:hover {
+            border-color: #fff;
+        }
+        @keyframes borderAnimation {
             0% {
-                text-shadow: 0 0 10px #fff, 0 0 20px #00c4ff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff;
+                box-shadow: 0 0 10px #fff;
             }
             100% {
-                text-shadow: 0 0 20px #fff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff, 0 0 80px #00c4ff;
+                box-shadow: 0 0 20px #fff;
             }
         }
         img {
@@ -53,6 +60,7 @@
             height: 200px;
             margin-bottom: 20px;
             transition: transform 0.3s ease;
+            animation: borderAnimation 2s infinite alternate;
         }
         img:hover {
             transform: scale(1.1);
@@ -63,6 +71,8 @@
         }
         .qualification {
             margin-bottom: 50px;
+            position: relative;
+            z-index: 2;
         }
         .qualification-card {
             background-color: #222;
@@ -72,6 +82,7 @@
             transition: transform 0.3s ease;
             display: inline-block;
             margin: 10px;
+            animation: borderAnimation 2s infinite alternate;
         }
         .qualification-card:hover {
             transform: translateY(-5px);
