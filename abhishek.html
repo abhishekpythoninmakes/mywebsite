@@ -4,54 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek AR - Profile</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         /* CSS styles for the website */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #000;
             color: #fff;
         }
-        nav {
+        .navbar {
             background-color: #000;
-            padding: 20px 0;
+            padding: 10px 20px;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
         }
+        .navbar h1 {
+            margin: 0;
+        }
         .container {
             max-width: 800px;
-            margin: 150px auto;
+            margin: 100px auto;
             padding: 0 20px;
             text-align: center;
-            position: relative;
-            z-index: 1;
         }
         h1 {
-            font-size: 48px;
+            font-size: 36px;
             margin-bottom: 20px;
             position: relative;
-            z-index: 2;
-            animation: borderAnimation 2s infinite alternate;
+            animation: glowAnimation 2s infinite alternate;
         }
         h1 span {
             display: inline-block;
-            padding: 5px;
-            border: 2px solid transparent;
-            transition: border-color 0.5s;
         }
-        h1 span:hover {
-            border-color: #fff;
+        h1 span:nth-child(1) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.1s;
         }
-        @keyframes borderAnimation {
+        h1 span:nth-child(2) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.2s;
+        }
+        h1 span:nth-child(3) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.3s;
+        }
+        h1 span:nth-child(4) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.4s;
+        }
+        h1 span:nth-child(5) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.5s;
+        }
+        h1 span:nth-child(6) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.6s;
+        }
+        h1 span:nth-child(7) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.7s;
+        }
+        h1 span:nth-child(8) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.8s;
+        }
+        h1 span:nth-child(9) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 0.9s;
+        }
+        h1 span:nth-child(10) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 1s;
+        }
+        h1 span:nth-child(11) {
+            animation: glowAnimation 2s infinite alternate;
+            animation-delay: 1.1s;
+        }
+        @keyframes glowAnimation {
             0% {
-                box-shadow: 0 0 10px #fff;
+                text-shadow: 0 0 10px #fff, 0 0 20px #00c4ff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff;
             }
             100% {
-                box-shadow: 0 0 20px #fff;
+                text-shadow: 0 0 20px #fff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff, 0 0 80px #00c4ff;
             }
         }
         img {
@@ -60,19 +97,20 @@
             height: 200px;
             margin-bottom: 20px;
             transition: transform 0.3s ease;
-            animation: borderAnimation 2s infinite alternate;
         }
         img:hover {
             transform: scale(1.1);
         }
         p {
-            font-size: 20px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
         .qualification {
-            margin-bottom: 50px;
-            position: relative;
-            z-index: 2;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
         }
         .qualification-card {
             background-color: #222;
@@ -80,9 +118,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
-            display: inline-block;
-            margin: 10px;
-            animation: borderAnimation 2s infinite alternate;
+            width: 200px;
         }
         .qualification-card:hover {
             transform: translateY(-5px);
@@ -93,43 +129,66 @@
         .social-icons {
             margin-top: 20px;
         }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .description {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            animation: fadeInAnimation 2s ease;
+        }
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <h1>
-                <span>A</span>
-                <span>b</span>
-                <span>h</span>
-                <span>i</span>
-                <span>s</span>
-                <span>h</span>
-                <span>e</span>
-                <span>k</span>
-                <span></span>
-                <span>A</span>
-                <span>R</span>
-            </h1>
-        </div>
-    </nav>
+
     <div class="container">
         <img src="your-image.jpg" alt="Abhishek AR">
-        <h1>Welcome to My Profile</h1>
+        <h1>
+            <span>A</span>
+            <span>b</span>
+            <span>h</span>
+            <span>i</span>
+            <span>s</span>
+            <span>h</span>
+            <span>e</span>
+            <span>k</span>
+            <span></span>
+            <span>A</span>
+            <span>R</span>
+        </h1>
+        <div class="description">
+            <p>"Hello, I'm Abhishek AR, a versatile professional proficient in Software Development, Data Science, Machine Learning, and Artificial Intelligence. With a passion for innovation and a commitment to excellence, I am excited to bring my expertise to your esteemed organization."</p>
+        </div>
         <div class="qualification">
-            <div class="qualification-card animate__animated animate__fadeInLeft">
+            <div class="qualification-card">
                 <p>Software Developer</p>
             </div>
-            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 0.3s;">
+            <div class="qualification-card">
                 <p>Data Scientist</p>
             </div>
-            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 0.6s;">
+            <div class="qualification-card">
                 <p>Machine Learning</p>
             </div>
-            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 0.9s;">
+            <div class="qualification-card">
                 <p>Artificial Intelligence</p>
             </div>
-            <div class="qualification-card animate__animated animate__fadeInLeft" style="animation-delay: 1.2s;">
+            <div class="qualification-card">
                 <p>Education: MSc</p>
             </div>
         </div>
@@ -143,6 +202,9 @@
             <a href="https://github.com/your-github-profile" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
             <!-- Add more social icons as needed -->
         </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Abhishek AR. All rights reserved.</p>
     </div>
 </body>
 </html>
